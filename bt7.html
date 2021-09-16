@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhap he so bac 2 : ");
+    let b = +prompt("Nhap he so bac 1 : ");
+    let c = +prompt("Nhap he so bac 0 ");
+    let d = b*b-4*a*c;
+    if(a == 0) {
+        if (b ==0) {
+            alert("Phuong trinh vo nghiem")
+        }
+        else {
+            alert("Phuong trinh co nghiem la " + (-c/b));
+
+        }
+    }
+
+    let x1;
+    let x2;
+    if (d > 0) {
+        x1 = (-b + Math.sqrt(d));
+        x2 = (-b - Math.sqrt(d));
+        alert("Phuong trinh co 2 nghiem la x1 = " + x1 );
+        alert("x2 = " + x2);
+    }
+    else if ( d ==0 ) {
+        x1 = (-b/(2*a));
+        alert("Phuong trinh co nghiem kep la x = " + x1);
+    }
+    else {
+        alert("Phuong trinh co vo so nghiem");
+    }
+
+</script>
+
+</body>
+</html>
